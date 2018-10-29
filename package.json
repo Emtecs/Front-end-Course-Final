@@ -1,0 +1,23 @@
+{
+  "name": "front-end-course-final",
+  "version": "1.0.0",
+  "description": "Final work of the first 8 weeks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emtecs/Front-end-Course-Final.git"
+  },
+  "author": "Karolis Sova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emtecs/Front-end-Course-Final/issues"
+  },
+  "homepage": "https://github.com/Emtecs/Front-end-Course-Final#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
