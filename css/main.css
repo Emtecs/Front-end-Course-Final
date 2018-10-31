@@ -18,10 +18,24 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #324545; }
+  color: #324545;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; }
 
 p {
   color: #aaa; }
+
+.no-padding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap; }
 
 .banner-after-slider {
   background-color: #1B2228;
@@ -29,8 +43,7 @@ p {
   padding: 30px 15px; }
   .banner-after-slider h3 {
     color: white;
-    margin-bottom: 40px;
-    font-weight: bolder; }
+    margin-bottom: 20px; }
   .banner-after-slider p {
     color: #aaa;
     font-size: 20px;
@@ -39,7 +52,7 @@ p {
 
 .content-after-banner {
   background-color: #f9fafc;
-  padding: 50px 0; }
+  padding: 80px 0; }
   .content-after-banner h3 {
     margin: 0 0 20px 0;
     text-transform: uppercase;
@@ -59,3 +72,14 @@ p {
   border-radius: 50%;
   position: relative;
   border: 1px solid teal; }
+
+/*
+OUR SKILLS CONTAINER
+ */
+.our-skills-container {
+  padding: 40px 20px;
+  background: #3C464D; }
+  .our-skills-container h2 {
+    color: white; }
+  .our-skills-container p {
+    color: rgba(255, 255, 255, 0.7); }
