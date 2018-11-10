@@ -4,7 +4,7 @@ function renderHTML(data) {
 
     for (let i = 0; i < data.length; i++) {
         plansBox +=
-            '<div class="col-md-4">' +
+            '<div class="col-sm-6 col-md-4">' +
                 '<div class="hexagon">' +
                     '<div class="price-plan-header-text">' +
                         '<h6>' + data[i].price + currencyUS + '</h6>' +

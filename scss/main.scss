@@ -270,6 +270,7 @@ form {
   }
   p {
     color: rgba(255, 255, 255, 0.7);
+
   }
 }
 #our-skills-img {
@@ -683,11 +684,32 @@ footer {
 }
 
 @media(max-width:767px){
+  .banner-after-slider {
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .icon-circle-2 {
+    margin-left: 100px;
+  }
   .our-skills-container {
     padding: 15px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 2;
+    }
   }
   .content-after-banner {
     text-align: center;
+  }
+  .modal {
+    display:none;
   }
 }
 @media(min-width:768px){
