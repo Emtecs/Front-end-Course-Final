@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Enar | The Multi-Purpose HTML5 Template</title>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
@@ -20,60 +23,219 @@
 <body>
     <header>
         <div class="container-fluid">
-            <div id="top_bar" class="container">
-                <div class="row">
-                    <div>
-                        <i class="fas fa-globe-americas"></i>
-                        <span>English</span>
+            <!--START TOP BAR PC-->
+            <div class="container">
+                <div id="top_bar" class="row">
+                    <div  class="col-md-8 pull-left clearfix">
+                        <div>
+                            <a href="#" class="bar-title a-deco-none">
+                                <div class="text-uppercase">
+                                    <i class="fas fa-globe-americas a-deco-none"></i>
+                                    English
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="bar-title a-deco-none">
+                                <div class="text-uppercase">
+                                    <i class="fas fa-key a-deco-none"></i>
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bar-title text-uppercase">
+                            <i class="fas fa-phone"></i>
+                            Call Us: (123) 456 - 7890
+                        </div>
+                        <div class="bar-title text-uppercase">
+                            <i class="far fa-comment"></i>
+                            Support: (123) 456 - 7890
+                        </div>
                     </div>
-                    <div>
-                        <i class="fas fa-key"></i>
-                        <span>Login</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-phone"></i>
-                        <span>Call Us: (123) 456 - 7890</span>
-                    </div>
-                    <div>
-                        <i class="far fa-comment"></i>
-                        <span>Support: (123) 456 - 7890</span>
-                    </div>
-                    <div class="pull-right">
-                        <a><i class="fab fa-facebook-f"></i></a>
-                        <a><i class="fab fa-twitter"></i></a>
-                        <a><i class="fab fa-google-plus-g"></i></a>
-                        <a><i class="fab fa-skype"></i></a>
-                        <a><i class="far fa-user-circle"></i></a>
-                        <a><i class="fab fa-vimeo-v"></i></a>
+                    <div class="col-md-4 pull-right text-right social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-skype"></i></a>
+                        <a href="#"><i class="far fa-user-circle"></i></a>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--END TOP BAR PC-->
+        <!--START TOP BAR REST DEVICES-->
+        <!--END TOP BAR REST DEVICES-->
+        <!--START NAV BAR PC-->
         <nav class="container">
-            <div class="row">
-                <div class="col-xs-12 center-block">
-                    <img src="images/logo-dark.png" class="center-block">
+            <div class="row padding-T20-B10">
+                <div class="col-md-9">
+                    <div class="navbar-header">
+                        <a class="" href="#">
+                            <img src="images/logo-dark.png" class="project-img">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse nav-bar-dropdown">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Sliders</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Shortcodes</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle nav-dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Team</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul></ul>
-                <input><span class="glyphicon glyphicon-search">gg</span>
+                <div class="col-md-3 pull-right">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="inner-addon left-addon" id="search">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </a>
+                                <input type="text" placeholder="Search Here ..." class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 shopping-cart">
+                            <!--START SHOP CART-->
+                            <div class="dropdown">
+                                <span class="badge">4</span>
+                                <button class="btn btn-secondary dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fab fa-opencart"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-primary bg-gray">
+                                    <div class="dropdown-item"><h3>Shopping Cart</h3></div>
+                                    <hr>
+                                    <div class="dropdown-item">Empty for now?</div>
+                                </div>
+                            </div>
+                            <!--END SHOP CART-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
+        <!--END NAV BAR PC-->
+        <!--START NAV BAR REST DEVICES-->
+        <!--END NAV BAR REST DEVICES-->
     </header>
     <section>
         <!--START SLIDER -->
-        <div class="container-fluid">
-            <div class="row">
-                <img src="images/sliders/kyoto_japan-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">
-
-                <!--TO DO-->
-                <!--<img src="images/sliders/kyoto_japan-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">-->
-                <!--<img src="images/sliders/kyoto_japan-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">-->
-
-                <div class="center-block">
-                    <span>Enar Theme is the Best</span>
-                    <span>Fully Responsive Design</span>
-                    <span>Lorem Ipsum is simply dummy text of the printing and industry</span>
+        <div class="container-fluid no-padding">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/sliders/kyoto_japan-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src="images/sliders/bamboo_forest_kyoto_japan-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">
+                    </div>
+                    <div class="item">
+                        <img src="images/sliders/cherry_blossoms_japan_2-wallpaper-1920x1080.jpg" alt="Slider Title" class="img-responsive">
+                    </div>
                 </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
         <!--END SLIDER -->
@@ -92,18 +254,18 @@
         </div>
         <!--END BANNER -->
         <!--START CONTENT AFTER BANNER -->
-        <div class="container-fluid content-after-banner bg_gray">
+        <div class="container-fluid content-after-banner bg-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-2 col-md-4">
                                 <div class="icon-circle text-center">
-                                    <i class="fas fa-desktop circle-font-awe text_lTeal"></i>
+                                    <i class="fas fa-desktop circle-font-awe text-lTeal"></i>
                                 </div>
                             </div>
-                            <div class="col-xs-9">
-                                <a><h3>Super Coding</h3></a>
+                            <div class="col-xs-12 col-sm-10 col-md-8">
+                                <a href="#"><h3>Super Coding</h3></a>
                                 <p>
                                     There are many variations of demo text passed sages of Lorem Ipsum available the
                                     majority There are many variations of demo.
@@ -113,13 +275,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-2 col-md-4">
                                 <div class="icon-circle text-center">
-                                    <i class="fas fa-tablet-alt circle-font-awe text_lTeal"></i>
+                                    <i class="fas fa-tablet-alt circle-font-awe text-lTeal"></i>
                                 </div>
                             </div>
-                            <div class="col-xs-9">
-                                <a><h3>Best User Interface</h3></a>
+                            <div class="col-xs-12 col-sm-10 col-md-8">
+                                <a href="#"><h3>Best User Interface</h3></a>
                                 <p>
                                     There are many variations of demo text passed sages of Lorem Ipsum available the
                                     majority There are many variations of demo.
@@ -129,13 +291,13 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-xs-3">
+                            <div class="col-xs-12 col-sm-2 col-md-4">
                                 <div class="icon-circle text-center">
-                                    <i class="fas fa-puzzle-piece circle-font-awe text_lTeal"></i>
+                                    <i class="fas fa-puzzle-piece circle-font-awe text-lTeal"></i>
                                 </div>
                             </div>
-                            <div class="col-xs-9">
-                                <a><h3>Unique Design</h3></a>
+                            <div class="col-xs-12 col-sm-10 col-md-8">
+                                <a href="#"><h3>Unique Design</h3></a>
                                 <p>
                                     There are many variations of demo text passed sages of Lorem Ipsum available the
                                     majority There are many variations of demo.
@@ -157,59 +319,245 @@
                         has been the industry standar dummyy text ever since the when an iunesi known printer of took a
                         galley of type.
                     </p>
-                    <div>
-                        <span>Web Design</span>
+                    <div class="container-to-fill">
+                        <span class="container-to-fill-title text-center">Web Design</span>
+                        <div class="container-filling display-none" id="fill-80">
+                            <span id="value80" class="value">80%</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>Programming</span>
+                    <div class="container-to-fill">
+                        <span class="container-to-fill-title text-center">Programming</span>
+                        <div class="container-filling display-none" id="fill-60">
+                            <span id="value60" class="value">60%</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>HTML / CSS</span>
+                    <div class="container-to-fill">
+                        <span class="container-to-fill-title text-center">HTML / CSS</span>
+                        <div class="container-filling display-none" id="fill-70">
+                            <span id="value70" class="value">70%</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>WordPress</span>
+                    <div class="container-to-fill">
+                        <span class="container-to-fill-title text-center">WordPress</span>
+                        <div class="container-filling display-none" id="fill-100">
+                            <span id="value100" class="value">100%</span>
+                        </div>
                     </div>
-                    <div>
-                        <span>Programming</span>
+                    <div class="container-to-fill">
+                        <span class="container-to-fill-title text-center">Joomla</span>
+                        <div class="container-filling display-none" id="fill-40">
+                            <span id="value40" class="value">40%</span>
+                        </div>
                     </div>
                 </div>
-                <div class="pull-right col-sm-6 no-padding">
-                    <img src="images/test_images/bg_header4.jpg" alt="Picture of a leaf" class="img-responsive">
-                </div>
+                <div class="pull-right col-sm-6 no-padding" id="our-skills-img"></div>
             </div>
         </div>
         <!--END OUR SKILLS SECTION-->
         <!--START WHY SECTION-->
-        <div class="container-fluid bg_gray">
-            <div class="container why-container row_spacer">
+        <div class="container-fluid bg-gray">
+            <div class="container why-container row-spacer">
                 <div class="row">
                     <div class="col-md-6">
                         <h2>Why choose us?</h2>
                         <div>
-                            <ul class="tabs-navi">
-                                <li>Quality</li>
-                                <li>Design</li>
-                                <li>Programming</li>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#quality">Quality</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Design</a></li>
+                                <li><a data-toggle="tab" href="#menu2">Programming</a></li>
                             </ul>
+                            <div class="tab-content">
+                                <div id="quality"  class="tab-pane fade in active">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
+                                                in text Ipsum has been the industry standar dummyy text ever since the when an
+                                                iunesi known.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>Multiple Layout</li>
+                                                <li>Awesome Shortcodes</li>
+                                                <li>Browser Compatibility</li>
+                                                <li>Easy to Edit Animations</li>
+                                                <li>Parallax Effect</li>
+                                                <li>Responsive Design</li>
+                                                <li>Many Home Page Versions</li>
+                                                <li>Many Blog Pages</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="images/test_images/porto5.jpg" class="img-responsive img-rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
+                                                in text Ipsum has been the industry standar dummyy text ever since the when an
+                                                iunesi known.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>Multiple Layout</li>
+                                                <li>Awesome Shortcodes</li>
+                                                <li>Browser Compatibility</li>
+                                                <li>Easy to Edit Animations</li>
+                                                <li>Parallax Effect</li>
+                                                <li>Responsive Design</li>
+                                                <li>Many Home Page Versions</li>
+                                                <li>Many Blog Pages</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="images/test_images/porto5.jpg" class="img-responsive img-rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem
+                                                in text Ipsum has been the industry standar dummyy text ever since the when an
+                                                iunesi known.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul>
+                                                <li>Multiple Layout</li>
+                                                <li>Awesome Shortcodes</li>
+                                                <li>Browser Compatibility</li>
+                                                <li>Easy to Edit Animations</li>
+                                                <li>Parallax Effect</li>
+                                                <li>Responsive Design</li>
+                                                <li>Many Home Page Versions</li>
+                                                <li>Many Blog Pages</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="images/test_images/porto5.jpg" class="img-responsive img-rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <h2>Why work with us?</h2>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    <div class="panel-heading active">
+                                        <h4 class="panel-title">
+                                            <i class="far fa-user"></i>
+                                            <span class="why-panel-title">Customer Service 24/7</span>
+                                            <span class="pull-right">+</span>
+                                            <span class="pull-right minus_symbol">-</span>
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p>
+                                            Though everyone says that customer service is good, but it's quite
+                                            opposite. Not many cares for their customers, only for their money.
+                                            But we <span class="text-red">ARE DIFFERENT!</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <i class="far fa-heart"></i>
+                                            <span class="why-panel-title">Integrity And Honesty</span>
+                                            <span class="pull-right">+</span>
+                                            <span class="pull-right minus_symbol">-</span>
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                           We are as honest as it is humanly possible. Always focused for quality and
+                                            always being proactive.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <i class="far fa-thumbs-up"></i>
+                                            <span class="why-panel-title">The Best Sales On The Country!</span>
+                                            <span class="pull-right">+</span>
+                                            <span class="pull-right minus_symbol">-</span>
+                                        </h4>
+                                    </div>
+                                </a>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p>
+                                            Yep, that's True!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--END WHY SECTION-->
-        <div>ROLLING NUMBERS</div>
+        <div id="rolling-numbers" class="container-fluid row-spacer rolling-numbers container-border-top">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <div class="rolling-numbers-div-cont"><i class="far fa-user"></i></div>
+                    <div class="rolling-numbers-div-cont rolling-numbers-numbers">
+                        <span class='numscroller' data-min='1' data-max='1500' data-delay='5' data-increment='10'></span>
+                    </div>
+                    <div class="rolling-numbers-text">Clients</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <div class="rolling-numbers-div-cont"><i class="far fa-heart"></i></div>
+                    <div class="rolling-numbers-div-cont rolling-numbers-numbers">
+                        <span class='numscroller' data-min='1' data-max='13' data-delay='5' data-increment='1'></span>
+                    </div>
+                    <div class="rolling-numbers-text">Awards</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <div class="rolling-numbers-div-cont"><i class="fas fa-code"></i></div>
+                    <div class="rolling-numbers-div-cont rolling-numbers-numbers">
+                        <span class='numscroller' data-min='1' data-max='94771' data-delay='5' data-increment='100'></span>
+                    </div>
+                    <div class="rolling-numbers-text">Line Of Code</div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                    <div class="rolling-numbers-div-cont"><i class="far fa-paper-plane"></i></div>
+                    <div class="rolling-numbers-div-cont rolling-numbers-numbers">
+                        <span class='numscroller' data-min='1' data-max='384' data-delay='5' data-increment='1'></span>
+                        </div>
+                    <div class="rolling-numbers-text">Projects</div>
+                </div>
+            </div>
+        </div>
         <!--START OUR SERVICES-->
         <div class="container-fluid container-border-top">
-            <div class="container row_spacer">
+            <div class="container row-spacer">
                 <div class="row">
                     <h2 class="text-center">Our Services</h2>
                     <div class="col-md-6">
                         <div>
                             <div class="icon-circle text-center pull-left icon-circle-reverse">
-                                <a> <i class="fas fa-desktop circle-font-awe text_white"></i></a>
+                                <a href="#"><i class="fas fa-desktop circle-font-awe text-white"></i></a>
                             </div>
                             <div class="margin-bot-50">
                                 <h3>Premium Sliders Included</h3>
@@ -221,7 +569,7 @@
                         </div>
                         <div>
                             <div class="icon-circle text-center pull-left icon-circle-reverse">
-                                <a><i class="fas fa-tablet-alt circle-font-awe text_white"></i></a>
+                                <a href="#"><i class="fas fa-tablet-alt circle-font-awe text-white"></i></a>
                             </div>
                             <div class="margin-bot-50">
                                 <h3>100% Responsive Layout</h3>
@@ -233,7 +581,7 @@
                         </div>
                         <div>
                             <div class="icon-circle text-center pull-left icon-circle-reverse">
-                                <a><i class="fas fa-flask circle-font-awe text_white"></i></a>
+                                <a href="#"><i class="fas fa-flask circle-font-awe text-white"></i></a>
                             </div>
                             <div class="margin-bot-50">
                                 <h3>Premium Sliders Included</h3>
@@ -253,16 +601,17 @@
         <!--END OUR SERVICES-->
         <!--START PRICING PLAN-->
         <div class="container-fluid container-border-top container-border-bottom">
-            <div class="container row_spacer">
-                <h2 class="text-center">Pricing <span class="text_lTeal">Plan</span></h2>
+            <div class="container row-spacer">
+                <h2 class="text-center">Pricing <span class="text-lTeal">Plan</span></h2>
             </div>
         </div>
         <!--END PRICING PLAN-->
         <!--START CONTACT-->
-        <div class="container-fluid bg_gray container-border-bottom">
-            <div class="container row_spacer">
+        <div class="container-fluid bg-gray container-border-bottom">
+            <div class="container row-spacer">
                 <div class="row">
                     <h2 class="text-center">Contact Us</h2>
+                    <!--EXTENDING LINE -->
                     <div class="col-md-12">
                         <h2 class="h2-get-in-touch"><span><i class="far fa-envelope-open"></i></span>Get in touch</h2>
                         <form class="form-horizontal">
@@ -305,19 +654,200 @@
             </div>
         </div>
         <!--END CONTACT-->
-        <div class="container-fluid our-location_bar no-padding">
+        <div class="container-fluid our-location-bar no-padding">
             <div class="container">
                 <h2 class="text-center">Our Location</h2>
             </div>
                 <div id='mymap'></div>
         </div>
-
+        <!--START PRE-FOOTER--->
+        <div class="container-fluid section-before-footer">
+            <div class="container row-spacer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h6>Company Info</h6>
+                        <img src="images/test_images/logo-light.png">
+                        <p>
+                            There are many Purchase Now There are many variations of passages of Lorem Ipsum available,
+                            but the majority
+                        </p>
+                        <button class="button-black">≻ Read More</button>
+                        <hr>
+                        <h6>Newsletter Singup</h6>
+                        <p>
+                            By subscribing to our mailing list you will always be update with the latest news :
+                        </p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your mail here ..." required>
+                            <span class="input-group-btn">
+                                <button class="btn  news-letter-btn" type="button"><i class="far fa-paper-plane"></i></button>
+                             </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h6>Recent Posts</h6>
+                        <ul>
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="pull-left recent_post_div">
+                                        <img src="images/test_images/thumb1.jpg" class="pull-left">
+                                        <span><i class="fas fa-link"></i></span>
+                                    </div>
+                                </a>
+                                <div class="pull-left recent_post_text">
+                                    <a href="#"><span>Best HTML5 Theme</span></a>
+                                    <span class="recent-post-detail">2015/01/23</span>
+                                    <span class="recent-post-detail">Tutorials, Videos</span>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="pull-left recent_post_div">
+                                        <img src="images/test_images/thumb2.jpg" class="pull-left">
+                                        <span><i class="fas fa-link"></i></span>
+                                    </div>
+                                </a>
+                                <div class="pull-left recent_post_text">
+                                    <a href="#"><span>Responsive Design</span></a>
+                                    <span class="recent-post-detail">2015/02/17</span>
+                                    <span class="recent-post-detail">Audio, Videos</span>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="pull-left recent_post_div">
+                                        <img src="images/test_images/thumb3.jpg" class="pull-left">
+                                        <span><i class="fas fa-link"></i></span>
+                                    </div>
+                                </a>
+                                <div class="pull-left recent_post_text">
+                                    <a href="#"><span>Many Home Pages</span></a>
+                                    <span class="recent-post-detail">2015/02/17</span>
+                                    <span class="recent-post-detail">Tutorials, Design</span>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#">
+                                    <div class="pull-left recent_post_div">
+                                         <img src="images/test_images/thumb4.jpg" class="pull-left">
+                                        <span><i class="fas fa-link"></i></span>
+                                    </div>
+                                </a>
+                                <div class="pull-left recent_post_text">
+                                    <a href="#"><span>Best HTML5 Theme</span></a>
+                                    <span class="recent-post-detail">2015/01/23</span>
+                                    <span class="recent-post-detail">Tutorials, Videos</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn-block button-black button-black-border margin-bottom">
+                            <span class="right_arrow" id="right_arrow_one"><i class="fas fa-arrow-right"></i></span>
+                            Read More Post
+                            <span class="right_arrow" id="right_arrow_two"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h6>Cloud Tags</h6>
+                        <a href="#"><span class="tag">Wordpress</span></a>
+                        <a href="#"><span class="tag">Creative</span></a>
+                        <a href="#"><span class="tag">Css3</span></a>
+                        <a href="#"><span class="tag">Design</span></a>
+                        <a href="#"><span class="tag">Graphic</span></a>
+                        <a href="#"><span class="tag">HTML5</span></a>
+                        <a href="#"><span class="tag">Seo</span></a>
+                        <a href="#"><span class="tag">UI</span></a>
+                        <a href="#"><span class="tag">Web Design</span></a>
+                        <hr>
+                        <h6>Flicker Widget</h6>
+                        <a href="#"><img src="images/test_images/flicker1.jpg" class="bikes-image"></a>
+                        <a href="#"><img src="images/test_images/flicker2.jpg" class="bikes-image"></a>
+                        <a href="#"><img src="images/test_images/flicker3.jpg" class="bikes-image"></a>
+                        <a href="#"><img src="images/test_images/flicker4.jpg" class="bikes-image"></a>
+                        <a href="#"><img src="images/test_images/flicker5.jpg" class="bikes-image"></a>
+                        <a href="#"><img src="images/test_images/flicker6.jpg" class="bikes-image"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <h6>Best Author</h6>
+                        <div class="author">
+                            <div class="author-image">
+                                <a href="#" class="best-author">
+                                    <img src="images/test_images/team2-medium.jpg" class="best-author-img">
+                                    <span class="author-name">John Doe</span>
+                                </a>
+                            </div>
+                            <div class="author-social-media clearfix">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6>Custom Video</h6>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="video-container">
+                                    <a href="#" class="launch-modal" data-modal-id="modal-video">
+                                        <img src="images/test_images/blog5.jpg" class="img-responsive">
+                                        <div class="play-btn center-block">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END PRE-FOOTER-->
     </section>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/map.js"></script>
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <p>
+                        Copyright © 2018 Powered By KS - <a href="#">IdealTheme - Enar Theme</a> - All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <ul class="nav nav-pills pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><span>/</span></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><span>/</span></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><span>/</span></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- START MODAL -->
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-md-12">
+                <div class="modal-dialog" role="document">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="1211" height="681" src="https://www.youtube.com/embed/XzGiNL3Mxrg?"
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
+<script src="js/map.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/progressBarFill.js"></script>
+<script src="js/animatedNumbers.js"></script>
+<script src="js/numscroller-1.0.js"></script>
 </body>
 </html>
