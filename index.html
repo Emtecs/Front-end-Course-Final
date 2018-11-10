@@ -600,9 +600,12 @@
         </div>
         <!--END OUR SERVICES-->
         <!--START PRICING PLAN-->
-        <div class="container-fluid container-border-top container-border-bottom">
+        <div id="pricing_plan_container" class="container-fluid container-border-top container-border-bottom">
             <div class="container row-spacer">
                 <h2 class="text-center">Pricing <span class="text-lTeal">Plan</span></h2>
+                <div id="plans" class="row">
+                    <!--FILLED FROM plans.JSON-->
+                </div>
             </div>
         </div>
         <!--END PRICING PLAN-->
@@ -847,7 +850,17 @@
 <script src="js/map.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/progressBarFill.js"></script>
-<script src="js/animatedNumbers.js"></script>
 <script src="js/numscroller-1.0.js"></script>
+<script src="js/pricingPlans.js"></script>
+<script>
+    var planContainer = document.getElementById('plans');
+    var ourRequest = new XMLHttpRequest();
+    ourRequest.open('GET', 'data/plans.json');
+    ourRequest.onload = function () {
+       var ourData = JSON.parse(ourRequest.responseText);
+        renderHTML(ourData);
+    };
+    ourRequest.send();
+</script>
 </body>
 </html>

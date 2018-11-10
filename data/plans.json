@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Advanced",
+    "highlighted": false,
+    "price":  599,
+    "membership":  1,
+    "benefits": [
+      {
+        "name": "Advanced setup ",
+        "status": 1
+      },
+      {
+        "name": "50 websites",
+        "status": 0
+      },
+      {
+        "name": "100GB storage",
+        "status": 1
+      },
+      {
+        "name": "Unlimited Bandwitch",
+        "status": 0
+      },
+      {
+        "name": "9 months support",
+        "status": 1
+      },
+      {
+        "name": "Unlimited Subdomains",
+        "status": 1
+      }
+    ]
+  },
+  {
+    "title": "Standart",
+    "highlighted": true,
+    "price":  299,
+    "membership":  1,
+    "benefits": [
+      {
+        "name": "Cheap setup",
+        "status": 1
+      },
+      {
+        "name": "50 websites",
+        "status": 0
+      },
+      {
+        "name": "55GB storage",
+        "status": 1
+      },
+      {
+        "name": "50GB Bandwitch",
+        "status": 1
+      },
+      {
+        "name": "9 months support",
+        "status": 0
+      },
+      {
+        "name": "Unlimited Subdomains",
+        "status": 0
+      }
+    ]
+  },
+  {
+    "title": "Professional",
+    "highlighted": false,
+    "price":  1999,
+    "membership":  1,
+    "benefits": [
+      {
+        "name": "Pro setup ",
+        "status": 1
+      },
+      {
+        "name": "50 websites",
+        "status": 1
+      },
+      {
+        "name": "1TB storage",
+        "status": 1
+      },
+      {
+        "name": "Unlimited Bandwitch",
+        "status": 1
+      },
+      {
+        "name": "12 months support",
+        "status": 1
+      },
+      {
+        "name": "Unlimited Subdomains",
+        "status": 1
+      }
+    ]
+  }
+]

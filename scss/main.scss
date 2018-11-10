@@ -1,4 +1,5 @@
 @import "navAndTopBar";
+@import "hexagon";
 /* TOP NAV BAR */
 header {
   div.container-fluid {
@@ -117,7 +118,7 @@ padding-right: 20px;
 
 
 
-/* TOP NAV BAR */
+/* END TOP NAV BAR */
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -163,6 +164,9 @@ form {
 }
 #mymap {
   height: 350px;
+}
+.position-relative {
+  position: relative;
 }
 .display-none {
   display: none;
@@ -331,7 +335,6 @@ form {
   top: 5px;
   text-align: center;
 }
-
 // END OUR SKILLS PROGRESS BAR
 .why-container {
   h2 {
@@ -355,7 +358,6 @@ form {
           padding: 15px 20px;
         }
       }
-
   .tab-content {
     border: 1px solid #ddd;
     border-top: none;
@@ -404,6 +406,84 @@ form {
     padding: 10px 0;
   }
 }
+//START PRICING PLANS
+
+#pricing_plan_container {
+  h2 {
+    padding-bottom: 50px;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style-type: none;
+      border-radius: 0;
+    }
+  }
+}
+#plans {
+    .fa-check {
+      color: green;
+      padding-right: 10px;
+    }
+    .fa-times {
+      color: red;
+      padding-right: 10px;
+    }
+}
+.plan_name {
+  h6 {
+    color: #1ccdca;
+    font-size: 20px;
+    border: 1px solid lightgray;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 20px;
+    padding-top: 65px;
+    margin: 0;
+  }
+}
+.pricing-plan-body:hover {
+  .plan_name {
+    background-color: #1ccdca;
+    transition: background-color 0.5s ease;
+    h6 {
+      color: white;
+      transition: color 1s ease;
+    }
+  }
+}
+
+.price-plan-order-btn {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 50px;
+  margin: 20px 0;
+  i {
+    padding-right: 10px;
+  }
+}
+.price-plan-order-btn:hover {
+  background-color: red;
+  color: white;
+}
+.price-plan-header-text{
+  font-size: 15px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  text-align: center;
+  p, h6 {
+    color: #1ccdca;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+//END PRICING PLANS
 //START PRE-FOOTER AND FOOTER
 .section-before-footer {
   background-color: #191E21;
