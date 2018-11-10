@@ -34,6 +34,70 @@
   border-left: solid 1.4142px #00ffff;
   border-radius: 5%; }
 
+#pricing_plan_container h2 {
+  padding-bottom: 20px; }
+
+#pricing_plan_container ul {
+  padding: 0; }
+  #pricing_plan_container ul li {
+    list-style-type: none;
+    border-radius: 0; }
+
+#plans .fa-check {
+  color: green;
+  padding-right: 10px; }
+
+#plans .fa-times {
+  color: red;
+  padding-right: 10px; }
+
+.plan_name h6 {
+  color: #1ccdca;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  padding-bottom: 20px;
+  padding-top: 65px;
+  margin: 0; }
+
+.pricing-plan-body {
+  border-radius: 5px; }
+
+.pricing-plan-body:hover .plan_name {
+  background-color: #1ccdca;
+  transition: background-color 0.5s ease; }
+  .pricing-plan-body:hover .plan_name h6 {
+    color: white;
+    transition: color 1s ease; }
+
+.price-plan-order-btn {
+  background: none;
+  border: 1px solid gray;
+  border-radius: 50px;
+  margin: 20px 0; }
+  .price-plan-order-btn i {
+    padding-right: 10px; }
+
+.price-plan-order-btn:hover {
+  background-color: red;
+  color: white; }
+
+.price-plan-header-text {
+  font-size: 15px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  text-align: center; }
+  .price-plan-header-text p, .price-plan-header-text h6 {
+    color: #1ccdca;
+    text-transform: uppercase; }
+  .price-plan-header-text h6 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px; }
+
 /* TOP NAV BAR */
 header div.container-fluid {
   background-color: white;
@@ -147,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-bottom: 20px; }
 
 h3 {
   margin: 20px 0;
@@ -229,6 +294,12 @@ form {
 .text-red {
   color: red; }
 
+.text-white {
+  color: white; }
+
+.text-lTeal {
+  color: #1ccdca; }
+
 .banner-after-slider {
   background-color: #1B2228;
   text-align: center;
@@ -259,12 +330,6 @@ form {
 
 .icon-circle-reverse {
   background-color: #1ccdca; }
-
-.text-white {
-  color: white; }
-
-.text-lTeal {
-  color: #1ccdca; }
 
 .circle-font-awe {
   font-size: 32px;
@@ -304,23 +369,18 @@ form {
   border-radius: 3px; }
 
 #fill-100 {
-  width: 100%;
   background: #71ad2a; }
 
 #fill-80 {
-  width: 80%;
   background: teal; }
 
 #fill-70 {
-  width: 70%;
   background: lightseagreen; }
 
 #fill-60 {
-  width: 60%;
   background: deepskyblue; }
 
 #fill-40 {
-  width: 40%;
   background: tomato; }
 
 .container-to-fill-title {
@@ -405,67 +465,6 @@ form {
     font-size: 24px;
     font-weight: 400;
     padding: 10px 0; }
-
-#pricing_plan_container h2 {
-  padding-bottom: 50px; }
-
-#pricing_plan_container ul {
-  padding: 0; }
-  #pricing_plan_container ul li {
-    list-style-type: none;
-    border-radius: 0; }
-
-#plans .fa-check {
-  color: green;
-  padding-right: 10px; }
-
-#plans .fa-times {
-  color: red;
-  padding-right: 10px; }
-
-.plan_name h6 {
-  color: #1ccdca;
-  font-size: 20px;
-  border: 1px solid lightgray;
-  border-bottom: none;
-  border-radius: 5px 5px 0 0;
-  padding-bottom: 20px;
-  padding-top: 65px;
-  margin: 0; }
-
-.pricing-plan-body:hover .plan_name {
-  background-color: #1ccdca;
-  transition: background-color 0.5s ease; }
-  .pricing-plan-body:hover .plan_name h6 {
-    color: white;
-    transition: color 1s ease; }
-
-.price-plan-order-btn {
-  background: none;
-  border: 1px solid gray;
-  border-radius: 50px;
-  margin: 20px 0; }
-  .price-plan-order-btn i {
-    padding-right: 10px; }
-
-.price-plan-order-btn:hover {
-  background-color: red;
-  color: white; }
-
-.price-plan-header-text {
-  font-size: 15px;
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  text-align: center; }
-  .price-plan-header-text p, .price-plan-header-text h6 {
-    color: #1ccdca;
-    text-transform: uppercase; }
-  .price-plan-header-text h6 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 10px; }
 
 .section-before-footer {
   background-color: #191E21; }
@@ -712,3 +711,36 @@ footer {
     padding: 15px; }
   .content-after-banner {
     text-align: center; } }
+
+.under-title-bar:hover .line-infront {
+  width: 20%;
+  transition: width 1s ease; }
+
+.line-behind {
+  background: lightgray;
+  height: 1px;
+  width: 30%;
+  position: relative; }
+
+.line-infront {
+  background: #1ccdca;
+  position: relative;
+  top: -1px;
+  height: 1px;
+  width: 5%;
+  transition: width 1s ease; }
+
+.line-image {
+  position: relative;
+  top: -25px;
+  font-size: 30px;
+  color: #1ccdca;
+  background-color: white;
+  padding: 5px; }
+
+.line-image-2 {
+  position: relative;
+  top: -10px;
+  font-size: 20px;
+  color: #1ccdca;
+  background-color: white; }

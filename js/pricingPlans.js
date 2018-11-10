@@ -11,8 +11,8 @@ function renderHTML(data) {
                         '<p>Monthly</p>' +
                     '</div>' +
                 '</div>' +
-                '<div class="text-center pricing-plan-body">' +
-                    '<div class="plan_name">' +
+                '<div class="text-center pricing-plan-body ">' +
+                    '<div class="plan_name ">' +
                         '<h6>' + data[i].title + '</h6>' +
                     '</div>' +
                     '<ul id="pricing_pans" class="list-group">';
