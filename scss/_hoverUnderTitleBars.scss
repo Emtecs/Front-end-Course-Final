@@ -1,0 +1,32 @@
+.under-title-bar:hover {
+  .line-infront {
+    width: 20%;
+    transition: width 1s ease;
+  }
+}
+.line-behind {
+  background: lightgray;
+  height: 1px;
+  width: 30%;
+  position: relative;
+}
+.line-infront {
+  background: #1ccdca;
+  position: relative; top: -1px;
+  height: 1px;
+  width: 5%;
+  transition: width 1s ease;
+}
+.line-image {
+  position: relative; top: -25px;
+  font-size: 30px;
+  color:#1ccdca;
+  background-color: white;
+  padding: 5px;
+}
+.line-image-2 {
+  position: relative; top: -10px;
+  font-size: 20px;
+  color:#1ccdca;
+  background-color: white;
+}

@@ -22,13 +22,13 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid no-padding top-bar-pc">
             <!--START TOP BAR PC-->
             <div class="container">
-                <div id="top_bar" class="row">
+                <div class="row top-bar">
                     <div  class="col-md-8 pull-left clearfix">
                         <div>
-                            <a href="#" class="bar-title a-deco-none">
+                            <a href="#" class="bar-title a-deco-none language">
                                 <div class="text-uppercase">
                                     <i class="fas fa-globe-americas a-deco-none"></i>
                                     English
@@ -36,35 +36,104 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="bar-title a-deco-none">
+                            <a href="#" class="bar-title a-deco-none login">
                                 <div class="text-uppercase">
                                     <i class="fas fa-key a-deco-none"></i>
                                     Login
                                 </div>
                             </a>
                         </div>
-                        <div class="bar-title text-uppercase">
+                        <div class="bar-title text-uppercase call-us">
                             <i class="fas fa-phone"></i>
                             Call Us: (123) 456 - 7890
                         </div>
-                        <div class="bar-title text-uppercase">
+                        <div class="bar-title text-uppercase support">
                             <i class="far fa-comment"></i>
                             Support: (123) 456 - 7890
                         </div>
                     </div>
                     <div class="col-md-4 pull-right text-right social-media">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                        <a href="#"><i class="fab fa-skype"></i></a>
-                        <a href="#"><i class="far fa-user-circle"></i></a>
-                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="far fa-user-circle"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <!--END TOP BAR PC-->
         <!--START TOP BAR REST DEVICES-->
+        <div id="top-bar-others" class="container-fluid no-padding">
+            <!--START TOP BAR PC-->
+            <div class="container top-bar-others display-none">
+                <div class="row top-bar">
+                    <div  class=" col-sm-12 col-md-8 pull-left clearfix">
+                        <div>
+                            <a href="#" class="bar-title a-deco-none language">
+                                <div class="text-uppercase">
+                                    <i class="fas fa-globe-americas a-deco-none"></i>
+                                    English
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="bar-title a-deco-none login">
+                                <div class="text-uppercase">
+                                    <i class="fas fa-key a-deco-none"></i>
+                                    Login
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bar-title text-uppercase call-us">
+                            <i class="fas fa-phone"></i>
+                            Call Us: (123) 456 - 7890
+                        </div>
+                        <div class="bar-title text-uppercase support">
+                            <i class="far fa-comment"></i>
+                            Support: (123) 456 - 7890
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 pull-right text-right social-media">
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="far fa-user-circle"></i>
+                        </a>
+                        <a href="#" class="soc_icon_bg">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button id="top_bar_toggle_btn" class="btn btn-block no-padding">
+                <i class="fas fa-angle-double-up display-none"></i>
+                <i class="fas fa-angle-double-down"></i>
+            </button>
+        </div>
         <!--END TOP BAR REST DEVICES-->
         <!--START NAV BAR PC-->
         <nav class="container">
@@ -612,10 +681,8 @@
                     <div class="line-behind center-block"></div>
                     <div class="line-infront center-block"></div>
                     <div class="center-block text-center "><i class="fas fa-briefcase line-image "></i></div>
-                    <div id="plans" class="row">
                 </div>
-                    <!--DATA IS FILLED FROM plans.JSON-->
-                    <!--DATA IS FILLED FROM plans.JSON-->
+                <div id="plans" class="row">
                     <!--DATA IS FILLED FROM plans.JSON-->
                 </div>
             </div>
@@ -869,6 +936,8 @@
 <script src="js/progressBarFill.js"></script>
 <script src="js/numscroller-1.0.js"></script>
 <script src="js/pricingPlans.js"></script>
+<script src="js/topBarButton.js"></script>
+<script src="js/media.js"></script>
 <script>
     var planContainer = document.getElementById('plans');
     var ourRequest = new XMLHttpRequest();
