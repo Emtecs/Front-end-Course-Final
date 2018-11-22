@@ -939,14 +939,7 @@
 <script src="js/topBarButton.js"></script>
 <script src="js/media.js"></script>
 <script>
-    var planContainer = document.getElementById('plans');
-    var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'data/plans.json');
-    ourRequest.onload = function () {
-       var ourData = JSON.parse(ourRequest.responseText);
-        renderHTML(ourData);
-    };
-    ourRequest.send();
+
 </script>
 </body>
 </html>

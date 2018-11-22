@@ -1,3 +1,11 @@
+var planContainer = document.getElementById('plans');
+var ourRequest = new XMLHttpRequest();
+ourRequest.open('GET', 'data/plans.json');
+ourRequest.onload = function () {
+    var ourData = JSON.parse(ourRequest.responseText);
+    renderHTML(ourData);
+};
+ourRequest.send();
 function renderHTML(data) {
     var plansBox = '';
     var currencyUS = '$';
